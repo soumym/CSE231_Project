@@ -15,8 +15,8 @@ struct CountStaticInstructions : public FunctionPass {
   CountStaticInstructions() : FunctionPass(ID) {}
 
   bool runOnFunction(Function &F) override {
-    errs() << "Jello: ";
-    errs().write_escaped(F.getName()) << '\n';
+    // errs() << "Jello: ";
+    // errs().write_escaped(F.getName()) << '\n';
     // for (BasicBlock &BB : F) {
     //     // Print out the name of the basic block if it has one, and then the
     //     // number of instructions that it contains
